@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Libro";
+}
+
+<h2>Libro1</h2>
+@{ 
+mvc.Models.Libro l = (mvc.Models.Libro)ViewData["MiLibro"];
+}
+
+codigo: @l.codigo.ToString() <br/>
+nombre: @l.nombre <br/>
+precio: @l.precio

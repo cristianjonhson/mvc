@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "libro2";
+}
+
+@model mvc.Models.Libro
+
+<h2>libro2</h2>
+
+codigo: @Model.codigo.ToString() <br/>
+nombre: @Model.nombre <br/>
+@if (@Model.precio > 1000)
+{
+    <h3>
+        precio: @Model.precio.ToString("C0")
+    </h3>
+}
+else
+{
+    <h3>
+        precio: @Model.precio.ToString("N0")
+    </h3>
+}
+
